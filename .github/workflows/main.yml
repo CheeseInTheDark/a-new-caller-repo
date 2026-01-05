@@ -5,7 +5,8 @@ on:
       - '*'
 
 defaults:
-  shell: bash
+  run:
+    shell: bash
 
 jobs:
   call-workflow:
