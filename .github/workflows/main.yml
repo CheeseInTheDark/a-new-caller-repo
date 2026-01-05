@@ -1,0 +1,12 @@
+name: Some Repo That Runs CI
+on: 
+  push:
+    branches:
+      - '*'
+
+defaults:
+  shell: bash
+
+jobs:
+  call-workflow:
+    uses: CheeseInTheDark/a-new-test-repo/.github/workflows/main.yml@test-branch
